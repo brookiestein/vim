@@ -27,6 +27,9 @@ set cursorline! " shows line under cursor's line
 set showmatch " shows matching part of bracket pairs (), [], {}
 set nocompatible " no compatible with vi setting, only vim:
 
+" Mouse
+set mouse=a
+
 " Indent
 set tabstop=8
 set shiftwidth=8
@@ -34,6 +37,9 @@ set smarttab " set tabs for a shifttabs logic
 set expandtab " expand tabs into spaces
 set autoindent " indent when moving to the next line while writing code
 set cindent
+" Because in html there are a lot of indentation, it's better to have only 4 spaces instead of 8.
+autocmd FileType html setlocal shiftwidth=4 tabstop=4
+autocmd FileType css setlocal shiftwidth=4 tabstop=4
 
 " Required by ctrl-space
 set hidden
