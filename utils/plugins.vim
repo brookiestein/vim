@@ -18,3 +18,5 @@ Plug 'Raimondi/delimitMate'
 Plug 'thaerkh/vim-indentguides'
 " Intellisense engine for autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Take screenshots of code
+Plug 'kristijanhusak/vim-carbon-now-sh'
